@@ -11,7 +11,6 @@ const Quotes = () => {
         axios.get("https://thesimpsonsquoteapi.glitch.me/quotes?count=5")
         .then((res)=>{
             setQuotes(res.data)
-            console.log(res.data)
         })
         .catch((err)=>{
             setError(err.message)

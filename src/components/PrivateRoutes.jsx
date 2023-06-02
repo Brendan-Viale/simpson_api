@@ -12,7 +12,9 @@ const PrivateRoutes = () => {
   return (
     <>
       {token !== null && 
-        <Outlet />
+        <main>
+          <Outlet />
+        </main>
       }
     </>
   )
